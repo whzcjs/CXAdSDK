@@ -15,6 +15,9 @@ target 'CXAdSDK_Example' do
   end
   
   pod 'MBProgressHUD'
+  pod 'Toast'
+  pod 'SDWebImage'
+  pod 'Masonry'
   
 end
 

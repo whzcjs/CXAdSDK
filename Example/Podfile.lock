@@ -1,14 +1,25 @@
 PODS:
   - CXAdSDK (1.0.0)
+  - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
+  - SDWebImage (5.21.1):
+    - SDWebImage/Core (= 5.21.1)
+  - SDWebImage/Core (5.21.1)
+  - Toast (4.1.1)
 
 DEPENDENCIES:
   - CXAdSDK (from `../`)
+  - Masonry
   - MBProgressHUD
+  - SDWebImage
+  - Toast
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Masonry
     - MBProgressHUD
+    - SDWebImage
+    - Toast
 
 EXTERNAL SOURCES:
   CXAdSDK:
@@ -16,8 +27,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CXAdSDK: 2df4619b72bfd0ac19cd55ea8f86de353ea795d4
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  SDWebImage: f29024626962457f3470184232766516dee8dfea
+  Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
 
-PODFILE CHECKSUM: bab18ef494fd1898540c8f8b91e7e5f11c9bdb01
+PODFILE CHECKSUM: 0c3452ee1ed51083fa541aa4639a018f3fbfa85b
 
 COCOAPODS: 1.16.2

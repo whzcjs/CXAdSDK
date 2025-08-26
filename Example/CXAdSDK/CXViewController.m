@@ -10,6 +10,12 @@
 #import <CXAdSDK/CXAdSDK.h>
 #import "AdTypeListModel.h"
 
+#import "RewardVideoViewController.h"
+#import "BannerViewController.h"
+#import "InterstitialAdViewController.h"
+#import "NativeExpressAdViewController.h"
+#import "NativeAdViewController.h"
+
 //#import <MBProgressHUD.h>
 
 @interface CXViewController ()<CXSplashAdDelegate>
@@ -55,39 +61,39 @@
         }
             break;
             
-//        case AdTypeBanner:
-//        {
-//            BannerViewController *vc = BannerViewController.new;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
-//            
-//        case AdTypeInterstitial:
-//        {
-//            InterstitialAdViewController *vc = InterstitialAdViewController.new;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
-//        case AdTypeNativeExpress:
-//        {
-//            NativeExpressAdViewController *vc = NativeExpressAdViewController.new;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
-//            
-//        case AdTypeNative:
-//        {
-//            NativeAdViewController *vc = NativeAdViewController.new;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
-//            
-//        case AdTypeRewardVideo:
-//        {
-//            RewardVideoViewController *vc = RewardVideoViewController.new;
-//            [self.navigationController pushViewController:vc animated:YES];
-//        }
-//            break;
+        case AdTypeBanner:
+        {
+            BannerViewController *vc = BannerViewController.new;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case AdTypeInterstitial:
+        {
+            InterstitialAdViewController *vc = InterstitialAdViewController.new;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case AdTypeNativeExpress:
+        {
+            NativeExpressAdViewController *vc = NativeExpressAdViewController.new;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case AdTypeNative:
+        {
+            NativeAdViewController *vc = NativeAdViewController.new;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        case AdTypeRewardVideo:
+        {
+            RewardVideoViewController *vc = RewardVideoViewController.new;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
             
         default:
             break;

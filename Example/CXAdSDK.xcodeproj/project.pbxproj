@@ -25,6 +25,23 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D97E09092E5DBC29002F2BDB /* AdTypeListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09082E5DBC29002F2BDB /* AdTypeListModel.m */; };
+		D97E09262E5DC1B8002F2BDB /* InterstitialAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09102E5DC1B8002F2BDB /* InterstitialAdViewController.m */; };
+		D97E09272E5DC1B8002F2BDB /* NativeExpressAdViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E091B2E5DC1B8002F2BDB /* NativeExpressAdViewCell.m */; };
+		D97E09282E5DC1B8002F2BDB /* NativeAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09182E5DC1B8002F2BDB /* NativeAdViewController.m */; };
+		D97E09292E5DC1B8002F2BDB /* SplashAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09242E5DC1B8002F2BDB /* SplashAdDelegate.m */; };
+		D97E092A2E5DC1B8002F2BDB /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E090D2E5DC1B8002F2BDB /* BannerViewController.m */; };
+		D97E092B2E5DC1B8002F2BDB /* RewardVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09212E5DC1B8002F2BDB /* RewardVideoViewController.m */; };
+		D97E092C2E5DC1B8002F2BDB /* NativeAdMoreImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09162E5DC1B8002F2BDB /* NativeAdMoreImageView.m */; };
+		D97E092D2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E090A2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift */; };
+		D97E092E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E091E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m */; };
+		D97E092F2E5DC1B8002F2BDB /* NativeAdListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D97E09132E5DC1B8002F2BDB /* NativeAdListCell.m */; };
+		D97E09302E5DC1B8002F2BDB /* NativeExpressAdViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E091C2E5DC1B8002F2BDB /* NativeExpressAdViewCell.xib */; };
+		D97E09312E5DC1B8002F2BDB /* NativeExpressAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E091F2E5DC1B8002F2BDB /* NativeExpressAdViewController.xib */; };
+		D97E09322E5DC1B8002F2BDB /* BannerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E090E2E5DC1B8002F2BDB /* BannerViewController.xib */; };
+		D97E09332E5DC1B8002F2BDB /* InterstitialAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09112E5DC1B8002F2BDB /* InterstitialAdViewController.xib */; };
+		D97E09342E5DC1B8002F2BDB /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09192E5DC1B8002F2BDB /* NativeAdViewController.xib */; };
+		D97E09352E5DC1B8002F2BDB /* RewardVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09222E5DC1B8002F2BDB /* RewardVideoViewController.xib */; };
+		D97E09362E5DC1B8002F2BDB /* NativeAdListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09142E5DC1B8002F2BDB /* NativeAdListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +87,32 @@
 		D623CA881DD0E2674003BFF0 /* Pods-CXAdSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXAdSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-CXAdSDK_Example/Pods-CXAdSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D97E09072E5DBC29002F2BDB /* AdTypeListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdTypeListModel.h; sourceTree = "<group>"; };
 		D97E09082E5DBC29002F2BDB /* AdTypeListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdTypeListModel.m; sourceTree = "<group>"; };
+		D97E090A2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkOnceTrigger.swift; sourceTree = "<group>"; };
+		D97E090C2E5DC1B8002F2BDB /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		D97E090D2E5DC1B8002F2BDB /* BannerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		D97E090E2E5DC1B8002F2BDB /* BannerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerViewController.xib; sourceTree = "<group>"; };
+		D97E090F2E5DC1B8002F2BDB /* InterstitialAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterstitialAdViewController.h; sourceTree = "<group>"; };
+		D97E09102E5DC1B8002F2BDB /* InterstitialAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterstitialAdViewController.m; sourceTree = "<group>"; };
+		D97E09112E5DC1B8002F2BDB /* InterstitialAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterstitialAdViewController.xib; sourceTree = "<group>"; };
+		D97E09122E5DC1B8002F2BDB /* NativeAdListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdListCell.h; sourceTree = "<group>"; };
+		D97E09132E5DC1B8002F2BDB /* NativeAdListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdListCell.m; sourceTree = "<group>"; };
+		D97E09142E5DC1B8002F2BDB /* NativeAdListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdListCell.xib; sourceTree = "<group>"; };
+		D97E09152E5DC1B8002F2BDB /* NativeAdMoreImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdMoreImageView.h; sourceTree = "<group>"; };
+		D97E09162E5DC1B8002F2BDB /* NativeAdMoreImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdMoreImageView.m; sourceTree = "<group>"; };
+		D97E09172E5DC1B8002F2BDB /* NativeAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeAdViewController.h; sourceTree = "<group>"; };
+		D97E09182E5DC1B8002F2BDB /* NativeAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeAdViewController.m; sourceTree = "<group>"; };
+		D97E09192E5DC1B8002F2BDB /* NativeAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeAdViewController.xib; sourceTree = "<group>"; };
+		D97E091A2E5DC1B8002F2BDB /* NativeExpressAdViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeExpressAdViewCell.h; sourceTree = "<group>"; };
+		D97E091B2E5DC1B8002F2BDB /* NativeExpressAdViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeExpressAdViewCell.m; sourceTree = "<group>"; };
+		D97E091C2E5DC1B8002F2BDB /* NativeExpressAdViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeExpressAdViewCell.xib; sourceTree = "<group>"; };
+		D97E091D2E5DC1B8002F2BDB /* NativeExpressAdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeExpressAdViewController.h; sourceTree = "<group>"; };
+		D97E091E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeExpressAdViewController.m; sourceTree = "<group>"; };
+		D97E091F2E5DC1B8002F2BDB /* NativeExpressAdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativeExpressAdViewController.xib; sourceTree = "<group>"; };
+		D97E09202E5DC1B8002F2BDB /* RewardVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RewardVideoViewController.h; sourceTree = "<group>"; };
+		D97E09212E5DC1B8002F2BDB /* RewardVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RewardVideoViewController.m; sourceTree = "<group>"; };
+		D97E09222E5DC1B8002F2BDB /* RewardVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardVideoViewController.xib; sourceTree = "<group>"; };
+		D97E09232E5DC1B8002F2BDB /* SplashAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashAdDelegate.h; sourceTree = "<group>"; };
+		D97E09242E5DC1B8002F2BDB /* SplashAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashAdDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +178,7 @@
 		6003F593195388D20070C39A /* Example for CXAdSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D97E09252E5DC1B8002F2BDB /* DemoFiles */,
 				6003F59C195388D20070C39A /* CXAppDelegate.h */,
 				6003F59D195388D20070C39A /* CXAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -199,6 +243,47 @@
 				BEDFD119A3DDD41EDB2D9174 /* Pods-CXAdSDK_Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D97E090B2E5DC1B8002F2BDB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D97E090A2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D97E09252E5DC1B8002F2BDB /* DemoFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D97E090B2E5DC1B8002F2BDB /* Common */,
+				D97E090C2E5DC1B8002F2BDB /* BannerViewController.h */,
+				D97E090D2E5DC1B8002F2BDB /* BannerViewController.m */,
+				D97E090E2E5DC1B8002F2BDB /* BannerViewController.xib */,
+				D97E090F2E5DC1B8002F2BDB /* InterstitialAdViewController.h */,
+				D97E09102E5DC1B8002F2BDB /* InterstitialAdViewController.m */,
+				D97E09112E5DC1B8002F2BDB /* InterstitialAdViewController.xib */,
+				D97E09122E5DC1B8002F2BDB /* NativeAdListCell.h */,
+				D97E09132E5DC1B8002F2BDB /* NativeAdListCell.m */,
+				D97E09142E5DC1B8002F2BDB /* NativeAdListCell.xib */,
+				D97E09152E5DC1B8002F2BDB /* NativeAdMoreImageView.h */,
+				D97E09162E5DC1B8002F2BDB /* NativeAdMoreImageView.m */,
+				D97E09172E5DC1B8002F2BDB /* NativeAdViewController.h */,
+				D97E09182E5DC1B8002F2BDB /* NativeAdViewController.m */,
+				D97E09192E5DC1B8002F2BDB /* NativeAdViewController.xib */,
+				D97E091A2E5DC1B8002F2BDB /* NativeExpressAdViewCell.h */,
+				D97E091B2E5DC1B8002F2BDB /* NativeExpressAdViewCell.m */,
+				D97E091C2E5DC1B8002F2BDB /* NativeExpressAdViewCell.xib */,
+				D97E091D2E5DC1B8002F2BDB /* NativeExpressAdViewController.h */,
+				D97E091E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m */,
+				D97E091F2E5DC1B8002F2BDB /* NativeExpressAdViewController.xib */,
+				D97E09202E5DC1B8002F2BDB /* RewardVideoViewController.h */,
+				D97E09212E5DC1B8002F2BDB /* RewardVideoViewController.m */,
+				D97E09222E5DC1B8002F2BDB /* RewardVideoViewController.xib */,
+				D97E09232E5DC1B8002F2BDB /* SplashAdDelegate.h */,
+				D97E09242E5DC1B8002F2BDB /* SplashAdDelegate.m */,
+			);
+			path = DemoFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +374,13 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				D97E09302E5DC1B8002F2BDB /* NativeExpressAdViewCell.xib in Resources */,
+				D97E09312E5DC1B8002F2BDB /* NativeExpressAdViewController.xib in Resources */,
+				D97E09322E5DC1B8002F2BDB /* BannerViewController.xib in Resources */,
+				D97E09332E5DC1B8002F2BDB /* InterstitialAdViewController.xib in Resources */,
+				D97E09342E5DC1B8002F2BDB /* NativeAdViewController.xib in Resources */,
+				D97E09352E5DC1B8002F2BDB /* RewardVideoViewController.xib in Resources */,
+				D97E09362E5DC1B8002F2BDB /* NativeAdListCell.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,10 +426,16 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-CXAdSDK_Example/Pods-CXAdSDK_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast/Toast.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -394,6 +492,16 @@
 				D97E09092E5DBC29002F2BDB /* AdTypeListModel.m in Sources */,
 				6003F59E195388D20070C39A /* CXAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* CXViewController.m in Sources */,
+				D97E09262E5DC1B8002F2BDB /* InterstitialAdViewController.m in Sources */,
+				D97E09272E5DC1B8002F2BDB /* NativeExpressAdViewCell.m in Sources */,
+				D97E09282E5DC1B8002F2BDB /* NativeAdViewController.m in Sources */,
+				D97E09292E5DC1B8002F2BDB /* SplashAdDelegate.m in Sources */,
+				D97E092A2E5DC1B8002F2BDB /* BannerViewController.m in Sources */,
+				D97E092B2E5DC1B8002F2BDB /* RewardVideoViewController.m in Sources */,
+				D97E092C2E5DC1B8002F2BDB /* NativeAdMoreImageView.m in Sources */,
+				D97E092D2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift in Sources */,
+				D97E092E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m in Sources */,
+				D97E092F2E5DC1B8002F2BDB /* NativeAdListCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
