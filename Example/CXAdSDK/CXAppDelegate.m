@@ -9,6 +9,10 @@
 #import "CXAppDelegate.h"
 #import <CXAdSDK/CXAdSDK.h>
 
+@interface CXAppDelegate ()<CXSplashAdDelegate>
+@property (strong, nonatomic) CXSplashAd *splashAd;
+@end
+
 @implementation CXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -17,6 +21,18 @@
     
     NSString *sdkVersion = [CXAdSDKManager sdkVersion];
     NSLog(@"sdk 版本号 = %@", sdkVersion);
+    
+    BOOL result = [CXAdSDKManager initWithAppId:kAppId secretKey:kSecretKey];
+    if (result) {
+        [CXAdSDKManager startWithCompletionHandler:^(BOOL success, NSError * _Nullable error) {
+            if (success) {
+                self.splashAd = [[CXSplashAd alloc] initWithPlacementId:kSplashId];
+                self.splashAd.delegate = self;
+                self.splashAd.viewController = self.window.rootViewController;
+                [self.splashAd loadAd];
+            }
+        }];
+    }
     
     return YES;
 }
@@ -47,5 +63,55 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+#pragma mark -CXSplashAdDelegate
+- (void)cx_splashAdDidLoad:(CXSplashAd *)splashAd {
+    NSLog(@"---------------广告加载成功");
+
+    [self.splashAd showAdInWindow: self.window];
+}
+/**
+ *  开屏广告展示失败
+ */
+- (void)cx_splashAdFailToPresent:(CXSplashAd *)splashAd withError:(NSError *)error {
+    NSLog(@"---------------广告加载失败 = %@", error);
+}
+
+- (void)cx_splashAdSuccessPresentScreen:(CXSplashAd *)splashAd {
+    NSLog(@"---------------开屏广告成功展示");
+}
+
+/**
+ *  开屏广告曝光回调
+ */
+- (void)cx_splashAdExposured:(CXSplashAd *)splashAd {
+    NSLog(@"----------------开屏广告曝光");
+}
+
+/**
+ *  开屏广告将要关闭回调
+ */
+- (void)cx_splashAdWillClosed:(CXSplashAd *)splashAd {
+    NSLog(@"-----------------开屏广告将要关闭");
+}
+
+/**
+ *  开屏广告关闭回调
+ */
+- (void)cx_splashAdClosed:(CXSplashAd *)splashAd {
+    NSLog(@"-----------------开屏广告已经关闭");
+}
+
+/**
+ *  开屏广告点击回调
+ */
+- (void)cx_splashAdClicked:(CXSplashAd *)splashAd {
+    NSLog(@"------------------开屏广告点击");
+}
+
+- (void)cx_splashAdLifeTime:(NSUInteger)time {
+    
+}
+
 
 @end

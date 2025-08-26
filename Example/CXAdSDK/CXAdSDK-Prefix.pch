@@ -13,4 +13,40 @@
 #ifdef __OBJC__
     @import UIKit;
     @import Foundation;
+
+
+// appId
+#define kAppId @"1015"
+
+// 媒体id
+#define kMediaId @"1002"
+
+// 媒体密钥
+#define kSecretKey @"4bf87efaeeab4aa7c9a360c62d7dc111"
+
+
+// 开屏广告
+#define kSplashId @"111873"
+
+// banner
+#define kBannerId @"111874"
+
+// 插屏
+#define kInterstitialId @"111875"
+
+// 激励视频
+#define kRewardVideoId @"111878"
+
+// 信息流模版广告
+#define kNativeExpressAdId @"111876"
+
+// 信息流自渲染广告
+#define kNativeAd @"111877"
+
+
+// 屏幕宽度
+#define kScreenWidth UIScreen.mainScreen.bounds.size.width
+// 屏幕高度
+#define kScreenHeight UIScreen.mainScreen.bounds.size.height
+
 #endif

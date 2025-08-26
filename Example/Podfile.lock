@@ -1,8 +1,14 @@
 PODS:
   - CXAdSDK (1.0.0)
+  - MBProgressHUD (1.2.0)
 
 DEPENDENCIES:
   - CXAdSDK (from `../`)
+  - MBProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MBProgressHUD
 
 EXTERNAL SOURCES:
   CXAdSDK:
@@ -10,7 +16,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   CXAdSDK: 2df4619b72bfd0ac19cd55ea8f86de353ea795d4
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 
-PODFILE CHECKSUM: cddee599a2592c1ffbe86fb5edbbbecacf5dbd6d
+PODFILE CHECKSUM: bab18ef494fd1898540c8f8b91e7e5f11c9bdb01
 
 COCOAPODS: 1.16.2
