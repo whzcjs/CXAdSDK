@@ -1,5 +1,5 @@
 PODS:
-  - CXAdSDK (0.1.0)
+  - CXAdSDK (1.0.0)
 
 DEPENDENCIES:
   - CXAdSDK (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CXAdSDK: 4e6008b8f1c6df6bdaa5d4b5fc10e51b08ecc81c
+  CXAdSDK: 2df4619b72bfd0ac19cd55ea8f86de353ea795d4
 
-PODFILE CHECKSUM: 288e4e142176d8c5e413aeeda2879191f4802f7e
+PODFILE CHECKSUM: cddee599a2592c1ffbe86fb5edbbbecacf5dbd6d
 
 COCOAPODS: 1.16.2

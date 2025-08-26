@@ -7,12 +7,17 @@
 //
 
 #import "CXAppDelegate.h"
+#import <CXAdSDK/CXAdSDK.h>
 
 @implementation CXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSString *sdkVersion = [CXAdSDKManager sdkVersion];
+    NSLog(@"sdk 版本号 = %@", sdkVersion);
+    
     return YES;
 }
 
