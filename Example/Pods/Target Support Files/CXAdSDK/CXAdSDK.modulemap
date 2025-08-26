@@ -1,0 +1,6 @@
+framework module CXAdSDK {
+  umbrella header "CXAdSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
