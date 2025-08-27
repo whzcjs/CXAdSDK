@@ -8,6 +8,9 @@
 
 #import "CXAppDelegate.h"
 #import <CXAdSDK/CXAdSDK.h>
+#import <CXAdSDK_Example-Swift.h>
+#import <AdSupport/AdSupport.h>
+#import <AppTrackingTransparency/AppTrackingTransparency.h>
 
 @interface CXAppDelegate ()<CXSplashAdDelegate>
 @property (strong, nonatomic) CXSplashAd *splashAd;
@@ -22,17 +25,21 @@
     NSString *sdkVersion = [CXAdSDKManager sdkVersion];
     NSLog(@"sdk 版本号 = %@", sdkVersion);
     
-    BOOL result = [CXAdSDKManager initWithAppId:kAppId secretKey:kSecretKey];
-    if (result) {
-        [CXAdSDKManager startWithCompletionHandler:^(BOOL success, NSError * _Nullable error) {
-            if (success) {
-                self.splashAd = [[CXSplashAd alloc] initWithPlacementId:kSplashId];
-                self.splashAd.delegate = self;
-                self.splashAd.viewController = self.window.rootViewController;
-                [self.splashAd loadAd];
-            }
-        }];
-    }
+    [[NetworkOnceTrigger shared] startMonitoringIfNeeded:^{
+        BOOL result = [CXAdSDKManager initWithAppId:kAppId secretKey:kSecretKey];
+        if (result) {
+            [CXAdSDKManager startWithCompletionHandler:^(BOOL success, NSError * _Nullable error) {
+                if (success) {
+                    self.splashAd = [[CXSplashAd alloc] initWithPlacementId:kSplashId];
+                    self.splashAd.delegate = self;
+                    self.splashAd.viewController = self.window.rootViewController;
+                    [self.splashAd loadAd];
+                }
+            }];
+        }
+    }];
+    
+    
     
     return YES;
 }
@@ -54,9 +61,22 @@
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    if (@available(iOS 14, *)) {
+        [ATTrackingManager requestTrackingAuthorizationWithCompletionHandler:^(ATTrackingManagerAuthorizationStatus status) {
+            if (status == ATTrackingManagerAuthorizationStatusAuthorized) {
+                NSString *idfa = [[ASIdentifierManager sharedManager].advertisingIdentifier UUIDString];
+                NSLog(@"--------idfa = %@", idfa);
+                
+            } else {
+                
+            }
+        }];
+    } else {
+        
+    }
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

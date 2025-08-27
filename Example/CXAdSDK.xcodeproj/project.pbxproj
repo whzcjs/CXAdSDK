@@ -42,6 +42,7 @@
 		D97E09342E5DC1B8002F2BDB /* NativeAdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09192E5DC1B8002F2BDB /* NativeAdViewController.xib */; };
 		D97E09352E5DC1B8002F2BDB /* RewardVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09222E5DC1B8002F2BDB /* RewardVideoViewController.xib */; };
 		D97E09362E5DC1B8002F2BDB /* NativeAdListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97E09142E5DC1B8002F2BDB /* NativeAdListCell.xib */; };
+		D97E093A2E5DC891002F2BDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97E09392E5DC891002F2BDB /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		D97E09222E5DC1B8002F2BDB /* RewardVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RewardVideoViewController.xib; sourceTree = "<group>"; };
 		D97E09232E5DC1B8002F2BDB /* SplashAdDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashAdDelegate.h; sourceTree = "<group>"; };
 		D97E09242E5DC1B8002F2BDB /* SplashAdDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashAdDelegate.m; sourceTree = "<group>"; };
+		D97E09392E5DC891002F2BDB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				D97E09082E5DBC29002F2BDB /* AdTypeListModel.m */,
 				6003F5A5195388D20070C39A /* CXViewController.h */,
 				6003F5A6195388D20070C39A /* CXViewController.m */,
+				D97E09392E5DC891002F2BDB /* NetworkManager.swift */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -501,6 +504,7 @@
 				D97E092C2E5DC1B8002F2BDB /* NativeAdMoreImageView.m in Sources */,
 				D97E092D2E5DC1B8002F2BDB /* NetworkOnceTrigger.swift in Sources */,
 				D97E092E2E5DC1B8002F2BDB /* NativeExpressAdViewController.m in Sources */,
+				D97E093A2E5DC891002F2BDB /* NetworkManager.swift in Sources */,
 				D97E092F2E5DC1B8002F2BDB /* NativeAdListCell.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -634,11 +638,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXAdSDK/CXAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "CXAdSDK/CXAdSDK-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "宸星Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -652,11 +662,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXAdSDK/CXAdSDK-Prefix.pch";
 				INFOPLIST_FILE = "CXAdSDK/CXAdSDK-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "宸星Example";
 				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
